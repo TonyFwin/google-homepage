@@ -1,0 +1,33 @@
+.container{
+  position: relative;
+  display: grid;
+  width: 100vw;
+  height: 100%;
+  grid-template-areas: "head"
+                       "main"
+                       "foot";
+  grid-template-rows: 1fr 5fr 1fr;  
+}
+
+.container > header {
+  grid-area: head;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container > main {
+  grid-area: main;
+  text-align: center;
+}
+
+.container > footer {
+  grid-area: foot;
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  line-height: 40px;
+  min-width: 980px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
